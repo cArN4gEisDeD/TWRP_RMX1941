@@ -4,9 +4,9 @@
 
 #<src>                                                 <mnt_point>            <type>  <mnt_flags and options>                                                                       <fs_mgr_flags>
 # Logical partitions
-/system		            ext4    /dev/block/platform/bootdevice/by-name/system			flags=wipeingui           
+/system		         ext4    /dev/block/platform/bootdevice/by-name/system	   	flags=wipeingui;backup=1;display="system"        
 /system_image           emmc    /dev/block/platform/bootdevice/by-name/system
-/vendor                 ext4    /dev/block/platform/bootdevice/by-name/vendor           flags=wipeingui
+/vendor                 ext4    /dev/block/platform/bootdevice/by-name/vendor           flags=wipeingui;backup=1;display="vendor"
 /vendor_image           emmc    /dev/block/platform/bootdevice/by-name/vendor			 
 
 # Userdata partition
