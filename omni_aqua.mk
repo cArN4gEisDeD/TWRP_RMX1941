@@ -23,17 +23,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := RMX1941
-PRODUCT_NAME := omni_RMX1941
+PRODUCT_NAME := omni_aqua
+PRODUCT_DEVICE := aqua
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme C2
 PRODUCT_MANUFACTURER := realme
-PRODUCT_RELEASE_NAME := Realme C2
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=RMX1941 \
-    BUILD_PRODUCT=RMX1941 \
-    TARGET_DEVICE=RMX1941
+    PRODUCT_NAME=aqua \
+    BUILD_PRODUCT=aqua \
+    TARGET_DEVICE=aqua
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
